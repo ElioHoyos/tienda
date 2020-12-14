@@ -21,7 +21,7 @@ class ControladorPlantilla{
 	/*=================================
 	= Estilo dinamico a la plantilla  =
 	===================================*/
-	public function ctrEstiloPlantilla(){
+	public static function ctrEstiloPlantilla(){
 
 		$tabla = "plantilla";
 
