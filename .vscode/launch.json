@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:80",
+            "url": "http://localhost:80/tienda/index.php",
             "webRoot": "${workspaceFolder}"
         }
     ]
