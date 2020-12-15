@@ -10,7 +10,7 @@ class AjaxPlantilla{
 
 		$respuesta = ControladorPlantilla::ctrEstiloPlantilla();
 
-		var_dump($respuesta);
+		echo json_encode($respuesta);
 
 	}
 

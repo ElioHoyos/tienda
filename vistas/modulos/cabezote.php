@@ -5,7 +5,7 @@
         <header class="header--style-1">
 
             <!--====== Nav 1 ======-->
-            <nav class="primary-nav primary-nav-wrapper--border">
+            <nav class="primary-nav primary-nav-wrapper--border barraSuperior">
                 <div class="container">
 
                     <!--====== Primary Nav ======-->
