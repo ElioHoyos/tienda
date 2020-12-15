@@ -29,11 +29,6 @@
     <!--====== App ======-->
     <link rel="stylesheet" href="vistas/css/app.css">
 
-    <!-- JS -->
-    <script src="vistas/js/plugins/jquery.min.js"></script>
-
-    <script src="vistas/js/plugins/bootstrap.min.js"></script>
-
 </head>
 <body class="config">
 
@@ -2187,6 +2182,9 @@
 
     <!--====== App ======-->
     <script src="vistas/js/app.js"></script>
+
+    <!-- JS -->
+    <script src="vistas/js/plantilla.js"></script>
 
     <!--====== Noscript ======-->
     <noscript>
