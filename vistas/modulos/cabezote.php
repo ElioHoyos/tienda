@@ -181,7 +181,6 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
                                                 $categorias = ControladorProductos::ctrMostrarCategorias();
 
                                                 foreach ($categorias as $key => $value) {
-                                                    $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
                                                     echo '<li >
                                                             
                                                             <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
