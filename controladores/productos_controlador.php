@@ -12,6 +12,17 @@ class ControladorProductos{
 
 	}
 
+
+    public function ctrMostrarNCategorias(){
+
+        $tabla = "categorias";
+
+        $respuesta = ModeloProductos::mdlMostrarNCategorias();
+
+        return $respuesta;
+
+    }
+
 	public function ctrMostrarSubCategorias($id){
 
 		$tabla = "subcategorias";

@@ -1,6 +1,8 @@
 /**
  * This is main script file that contains JS code.
  */
+
+
 (function ($) {
     // Main Object
     var RESHOP = {};

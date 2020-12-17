@@ -6,17 +6,31 @@ class ModeloProductos{
 
 	static public function mdlMostrarCategorias($tabla){
 
-		$stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+    $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 
-		$stmt -> execute();
+    $stmt -> execute();
 
-		return $stmt -> fetchAll();
+    return $stmt -> fetchAll();
 
-		$stmt -> close();
+    $stmt -> close();
 
-		$stmt = null;
+    $stmt = null;
 
-	}
+}
+
+    static public function mdlMostrarNCategorias(){
+
+        $stmt = Conexion::conectar()->prepare("SELECT count(*) FROM categorias");
+
+        $stmt -> execute();
+
+        return $stmt -> fetchColumn();
+
+        $stmt -> close();
+
+        $stmt = null;
+
+    }
 
 	static public function mdlMostrarSubCategorias($tabla,$id){
 
