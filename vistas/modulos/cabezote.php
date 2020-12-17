@@ -193,7 +193,7 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
 
                                                <?php } ?>
                                             </ul>
-
+                                       <!-- Add this for test-->
                                         </div>
                                         <?php foreach ($categorias as $key => $value) {
                                         $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]); ?>
