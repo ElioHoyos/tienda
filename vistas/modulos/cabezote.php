@@ -170,56 +170,27 @@
                                             <div class="mega-menu-wrap">
                                                 <div class="mega-menu-list">
                                                     <ul>
-                                                        <li class="js-active">
+                                                        
+                                                        <?php
 
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-tv u-s-m-r-6"></i>
+                                                        $categorias = ControladorProductos::ctrMostrarCategorias();
 
-                                                                <span>Electronics</span></a>
-
-                                                            <span class="js-menu-toggle js-toggle-mark"></span></li>
-                                                        <li>
+                                                        foreach ($categorias as $key => $value) {
+                                                            echo '<li>
 
                                                             <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
 
-                                                                <span>Women's Clothing</span></a>
+                                                                <span>'.$value["categoria"].'</span></a>
 
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
+                                                            <span class="js-menu-toggle"></span>
+                                                        </li>';
+                                                        }
 
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-male u-s-m-r-6"></i>
 
-                                                                <span>Men's Clothing</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-utensils u-s-m-r-6"></i>
-
-                                                                <span>Food & Supplies</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-couch u-s-m-r-6"></i>
-
-                                                                <span>Furniture & Decor</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-football-ball u-s-m-r-6"></i>
-
-                                                                <span>Sports & Game</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
-                                                        <li>
-
-                                                            <a href="index.html"><i class="fas fa-heartbeat u-s-m-r-6"></i>
-
-                                                                <span>Beauty & Health</span></a>
-
-                                                            <span class="js-menu-toggle"></span></li>
+                                                        ?>
+                                                        
                                                     </ul>
+                                                    
                                                 </div>
 
                                                 <!--====== Electronics ======-->
