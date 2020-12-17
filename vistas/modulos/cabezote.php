@@ -182,7 +182,7 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
 
                                                 foreach ($categorias as $key => $value) {
                                                     $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
-                                                    echo '<li class="cat" id="' . ($key + 1) . '" >
+                                                    echo '<li >
                                                             
                                                             <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
 
@@ -198,12 +198,12 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
                                         </div>
                                         <?php foreach ($categorias as $key => $value) {
                                         $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]); ?>
-                                        <div class="mega-menu-content subcat" id="n<?= ($key + 1) ?>" >
+                                        <div class="mega-menu-content"  >
                                             <div class="row">
                                                 <?php  foreach($subcategorias as $key1 => $value1) { ?>
                                                     <div class="col-lg-3">
                                                         <ul>
-                                                            <li class="mega-list-title" name="sub" id="<?= $key1 ?>">
+                                                            <li class="mega-list-title"  >
                                                                 <a href="#"><?= $value1["subcategoria"] ?></a></li>
                                                             <li>
                                                         </ul>
