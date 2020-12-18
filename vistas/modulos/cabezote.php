@@ -183,7 +183,7 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
                                                 foreach ($categorias as $key => $value) {
                                                     echo '<li >
                                                             
-                                                            <a href="shop-side-version-2.html"><i class="fas fa-female u-s-m-r-6"></i>
+                                                            <a href="'.$value["ruta"].'"><i class="fas fa-female u-s-m-r-6"></i>
 
                                                                 <span>' . $value["categoria"] . '</span></a>
 
@@ -194,17 +194,35 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
                                                <?php } ?>
                                             </ul>
                                        <!-- Add this for test-->
-                                        </div>
+                                        </div> 
                                         <?php foreach ($categorias as $key => $value) {
                                         $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]); ?>
                                         <div class="mega-menu-content"  >
                                             <div class="row">
+                                                        <div class="col-lg-9 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block">
+
+                                                                    <img class="u-img-fluid u-d-block" src="vistas/images/banners/banner-mega-3.jpg" alt=""></a></div>
+                                                        </div>
+                                                        <div class="col-lg-3 mega-image">
+                                                            <div class="mega-banner">
+
+                                                                <a class="u-d-block">
+
+                                                                    <img class="u-img-fluid u-d-block" src="vistas/images/banners/banner-mega-4.jpg" alt=""></a></div>
+                                                        </div>
+                                                    </div>
+                                            <div class="row">
                                                 <?php  foreach($subcategorias as $key1 => $value1) { ?>
                                                     <div class="col-lg-3">
+                                                        
                                                         <ul>
                                                             <li class="mega-list-title"  >
-                                                                <a href="#"><?= $value1["subcategoria"] ?></a></li>
-                                                            <li>
+                                                                <a href="#"><?= $value1["subcategoria"] ?></a>
+                                                            </li>
+                                                            
                                                         </ul>
                                                     </div>
                                                 <?php }?>
