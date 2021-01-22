@@ -220,7 +220,7 @@ $social = ControladorPlantilla::ctrEstiloPlantilla();
                                                         
                                                         <ul>
                                                             <li class="mega-list-title"  >
-                                                                <a href="#"><?= $value1["subcategoria"] ?></a>
+                                                                <a href="<?=$value1["ruta"] ?>"><?= $value1["subcategoria"] ?></a>
                                                             </li>
                                                             
                                                         </ul>
