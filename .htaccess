@@ -1,0 +1,9 @@
+#Impedir lista de contenido de directorio
+
+Options All -Indexes
+
+#URL Amigables
+
+RewriteEngine On
+
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1
