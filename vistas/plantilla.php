@@ -52,7 +52,7 @@
         $valor = $_GET["ruta"];
 
         $rutaCategorias = ControladorProductos::ctrMostrarCategorias($item, $valor);
-        var_dump($rutaCategorias["id"]);
+        var_dump($rutaCategorias["categoria"]);
         
         if($rutas[0] == "bolsos")
         {
